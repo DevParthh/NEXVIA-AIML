@@ -1,0 +1,9 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+  triton:                       # needs an NVIDIA NGC image pull; CPU-only works (it just ignores the GPU flag)
+    image: nvcr.io/nvidia/tritonserver:24.08-py3
+    command: tritonserver --model-repository=/models
+    volumes: ["./triton_models:/models"]
+    ports: ["8001:8000", "8002:8001", "8003:8002"]

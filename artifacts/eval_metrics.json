@@ -1,0 +1,16 @@
+{
+  "n_test_users": 106,
+  "candidate_recall@200": 0.18732988859710786,
+  "retrieval/recall@10": 0.014305292616458501,
+  "retrieval/ndcg@10": 0.040935463828671116,
+  "retrieval/recall@20": 0.022440648154326413,
+  "retrieval/ndcg@20": 0.04023588400895595,
+  "retrieval+ranker/recall@10": 0.015211642937485004,
+  "retrieval+ranker/ndcg@10": 0.04421707309484866,
+  "retrieval+ranker/recall@20": 0.023209343573914472,
+  "retrieval+ranker/ndcg@20": 0.04361185244538079,
+  "popularity/recall@10": 0.026757076819640308,
+  "popularity/ndcg@10": 0.06871141555599536,
+  "popularity/recall@20": 0.04153922524137693,
+  "popularity/ndcg@20": 0.06817350726298711
+}

@@ -1,0 +1,16 @@
+tensorflow>=2.16
+tf-keras
+tensorflow-recommenders
+faiss-cpu
+pandas
+pyarrow
+numpy
+scikit-learn
+fastapi
+uvicorn
+redis
+streamlit
+pyspark
+httpx
+pytest
+# Airflow is installed separately (see README) - it has heavy pinned deps
