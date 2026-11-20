@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: nexvia-aiml-03
+    runtime: python
+    plan: free
+    region: singapore
+    branch: main
+    buildCommand: pip install -r requirements-render.txt
+    startCommand: streamlit run app/demo.py --server.address 0.0.0.0 --server.port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: TF_USE_LEGACY_KERAS
+        value: "1"
