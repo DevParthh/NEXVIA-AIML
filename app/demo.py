@@ -229,7 +229,7 @@ def get_poster_url(movie):
 
 @st.cache_resource
 def load_recommender():
-    return Recommender()
+    return Recommender(load_ranker=False)
 
 
 try:
@@ -692,3 +692,4 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
